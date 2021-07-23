@@ -50,7 +50,6 @@ export const Body = styled.div`
     display: flex;
     justify-content: space-between;
     margin-top: 90px;
-
     a{
         color: black;
     }

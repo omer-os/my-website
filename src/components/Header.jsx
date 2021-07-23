@@ -90,6 +90,12 @@ export const Nav = styled.header`
     padding: 30px 40px;
     background-color: white;
     padding-bottom: 5px;
+    z-index: 999;
+
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
 
     .name__logo{
         background-color: #C8DBAE;
@@ -139,16 +145,16 @@ export const Header__left = styled.div`
     
     @media (max-width: 1000px){
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         transform: translate(-50%,-50%);
         transition: all .4s ease-in-out;
-        top:  ${(props)=>props.Show ? '50%' : '-100%'};
+        top:  ${(props)=>props.Show ? '50vh' : '-100vh'};
         left: ${(props)=>props.Show ? '50%' : '50%'};
         text-align: center;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         background-color: white;
-        z-index: 99;
+        z-index: 999;
         justify-content: space-evenly;
     }
 `
