@@ -39,6 +39,27 @@ export default function APP() {
                         InsideCardLeft > img
                         InsideCardRight > text
              */}
+
+
+             {/*  my projects > 
+
+                    titleLine > text
+                    projects > 
+                        ProjectCard > 
+                            projectTitle
+                            projectBody
+                            projectButtons > 
+                                Buttons*3
+
+                    titleLine > text
+                    projects > 
+                        ProjectCard > 
+                            projectTitle
+                            projectBody
+                            projectButtons > 
+                                Buttons*3
+             
+             */}
         </Body>
     )
 }

@@ -12,6 +12,7 @@ import About from './About';
 import HomePage from './HomePage';
 import Contacts from './Contacts';
 import  MyProjects from './MyProjects'
+import Tools from './Tools';
 
 export default function Header() {
     const [ShowMenu, setShowMenu] = useState(false)
@@ -51,6 +52,11 @@ export default function Header() {
                             setLinkColos('contacts')
                     }} style={LinkColos=='contacts' ? {color:'blue' , borderBottom:'2px solid blue'} : {}} to='/Contacts'><li>contacts</li></Link>
                 
+                    <Link onClick={()=>setShowMenu(!ShowMenu)} onClick={
+                        ()=>{setShowMenu(!ShowMenu)
+                            setLinkColos('tools')
+                    }} style={LinkColos=='tools' ? {color:'blue' , borderBottom:'2px solid blue'} : {}} to='/tools'><li>some tools</li></Link>
+                
                 </Header__left>
 
                 <div className="burgerMenu" onClick={()=>{setShowMenu(!ShowMenu)}}>
@@ -58,7 +64,6 @@ export default function Header() {
                             <div className="line"></div>
                             <div className="line"></div>
                 </div>
-
             </Nav>
 
 
@@ -71,6 +76,9 @@ export default function Header() {
                 </Route>                
                 <Route path='/About'>
                     <About />
+                </Route>
+                <Route path='/tools'>
+                    <Tools />
                 </Route>
                 <Route path='/'>
                     <HomePage/>
