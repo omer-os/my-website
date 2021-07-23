@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Tools() {
+export default function ProjectDetails() {
     return (
         <div>
             
